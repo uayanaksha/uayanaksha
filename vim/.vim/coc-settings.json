@@ -1,0 +1,4 @@
+{
+  "zig.zls.path": "/home/ayanaksha/.config/coc/extensions/coc-zls-data/zls_install/zls",
+  "clangd.fallbackFlags": [ "-std=c++23" ]
+}

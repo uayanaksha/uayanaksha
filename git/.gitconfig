@@ -1,0 +1,27 @@
+[core]
+	editor = vim
+[user]
+	name = Ayanaksha Upadhyaya
+	email = 172816128+uayanaksha@users.noreply.linux.com 
+  signingKey = ~/.ssh/sign.pub
+[status]
+	showUntrackedFiles = no
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+[merge]
+	tool = meld
+[diff]
+	tool = meld
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
