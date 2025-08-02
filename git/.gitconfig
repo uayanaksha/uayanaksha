@@ -2,7 +2,7 @@
 	editor = vim
 [user]
 	name = Ayanaksha Upadhyaya
-	email = 172816128+uayanaksha@users.noreply.linux.com 
+	email = uayanaksha@gmail.com
   signingKey = ~/.ssh/sign.pub
 [status]
 	showUntrackedFiles = no
