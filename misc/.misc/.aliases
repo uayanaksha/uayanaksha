@@ -7,7 +7,7 @@ alias ga="git add "
 alias gc="git commit "
 alias gp="git push "
 alias grep='grep --color=auto'
-alias ls="eza"
+alias ls="eza -a"
 alias pl="mpv --ytdl-format='bestvideo[height<=1440]+bestaudio/best' "
 alias play="cat ~/.misc/op-ed.txt | fzf-tmux | cut -d'|' -f 2 | \
             xargs mpv --profile=fast \
