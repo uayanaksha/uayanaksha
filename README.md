@@ -1,18 +1,20 @@
-# Ayanaksha U (SysOps/DevOps Explorer)
-  > [!IMPORTANT] 
-  > Actively seeking for opportunities
+# Ayanaksha U : Lv1 Engineer
 
-Engaged in: [Competitive Programming](https://github.com/uayanaksha/codeforces)
+> [!IMPORTANT]
+> Actively seeking opportunities
+
+## Currently Engaged in: [CP](https://github.com/uayanaksha/codeforces)
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=uayanaksha&theme=tokyonight" alt="mystreak"/>
 
 ## Core Competencies
+![Technologies](https://skillicons.dev/icons?i=react,py,cpp,git,docker,supabase,linux,bash,vim)
 
-| Language/Framework/Tools | Proof of work |
-| --- | --- |
-| ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=yellow) | [book-recomender](https://github.com/uayanaksha/book-recomender) |
-| ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=darkblue) ![Next.js](https://img.shields.io/badge/-Next.js-000000?style=flat-square&logo=next.js&logoColor=white) | [voteseva](https://github.com/uayanaksha/voteseva) |
-| ![Git](https://img.shields.io/badge/-Github-010101?style=flat-square&logo=github&logoColor=white) | [@uayanaksha](https://github.com/uayanaksha/) |
-| ![Vim](https://img.shields.io/badge/-Vim-darkgreen?style=flat-square&logo=vim&logoColor=white) | [vimrc](https://gist.github.com/uayanaksha/8462fdc966aec0380d3d89da3ead1c44) |
+## Projects
+
+[**Voteseva**](https://github.com/uayanaksha/voteseva): Online voting system
+
+[**book-recomender**](https://github.com/uayanaksha/book-recomender): Huggingface wrapped book recommendation model
 
 ## Connect
-
-[Email](mailto:uayanaksha@gmail.com) | [LinkedIn](https://linkedin.com/in/uayanaksha) | [Website](https://ayanaksha.vercel.app/)
+[Email](mailto:uayanaksha@gmail.com) | [LinkedIn](https://linkedin.com/in/uayanaksha) | [X Profile](https://x.com/uayanaksha/) | [Website](https://ayanaksha.vercel.app/)
