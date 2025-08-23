@@ -74,6 +74,7 @@ bcprov
 binutils
 bison
 blas
+blendr
 blueman
 bluez
 bluez-hid2hci
@@ -163,6 +164,7 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
+electron34
 ell
 enchant
 entr
@@ -170,6 +172,7 @@ epiphany
 evince
 evolution-data-server
 exempi
+exfatprogs
 exiv2
 exo
 expat
@@ -384,6 +387,9 @@ hunspell
 hwdata
 hwloc
 hyphen
+hyprgraphics
+hyprlang
+hyprlock
 hyprutils
 hyprwayland-scanner
 iana-etc
@@ -400,6 +406,7 @@ intel-gmmlib
 intel-gpu-tools
 intel-media-driver
 intel-ucode
+iotop
 iproute2
 iptables
 iputils
@@ -808,6 +815,8 @@ meld
 mesa
 mesa-utils
 meson
+minikube
+minizip
 mjpegtools
 mkinitcpio
 mkinitcpio-busybox
@@ -842,7 +851,6 @@ nettle
 network-manager-applet
 networkmanager
 networkmanager-openvpn
-newsboat
 ninja
 niri
 nm-connection-editor
@@ -1074,6 +1082,7 @@ sane
 sassc
 sbc
 scrcpy
+sdbus-cpp
 sdl12-compat
 sdl2-compat
 sdl2_ttf
@@ -1109,7 +1118,6 @@ sratom
 srt
 sshfs
 startup-notification
-stfl
 stow
 sudo
 suitesparse
@@ -1175,7 +1183,6 @@ ttyper
 tumbler
 turso-cli-bin
 twolame
-typora
 typst
 typst-lsp-bin
 tzdata
@@ -1209,6 +1216,7 @@ volume_key
 vte-common
 vte3
 vte4
+vulkan-headers
 vulkan-icd-loader
 vulkan-intel
 w3m
