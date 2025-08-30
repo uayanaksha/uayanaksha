@@ -4,6 +4,7 @@
 # [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && source /usr/share/bash-completion/bash_completion
 
 eval "$(thefuck --alias fk)"
+eval "$(zoxide init bash)"
 
 # Activate aliases
 [[ $PS1 && -f ~/.misc/.aliases ]] && . ~/.misc/.aliases
