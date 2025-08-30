@@ -31,6 +31,7 @@ alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
 alsa-utils
+amp-bin
 android-file-transfer
 android-tools
 android-udev
@@ -109,10 +110,7 @@ chromaprint
 cifs-utils
 clang
 clucene
-clutter
-clutter-gtk
 cmatrix
-cogl
 colord
 colord-gtk-common
 colord-gtk4
@@ -200,7 +198,6 @@ flatpak
 flex
 fluidsynth
 fmt
-folks
 fontconfig
 foot
 freeglut
@@ -224,7 +221,6 @@ gdb
 gdb-common
 gdbm
 gdk-pixbuf2
-gdm
 gegl
 genius
 geoclue
@@ -250,8 +246,6 @@ glu
 glusterfs
 glycin
 gmp
-gnome-2048
-gnome-app-list
 gnome-autoar
 gnome-backgrounds
 gnome-bluetooth-3.0
@@ -259,12 +253,10 @@ gnome-browser-connector
 gnome-calculator
 gnome-calendar
 gnome-characters
-gnome-chess
 gnome-clocks
 gnome-color-manager
 gnome-connections
 gnome-console
-gnome-contacts
 gnome-control-center
 gnome-desktop
 gnome-desktop-4
@@ -274,12 +266,8 @@ gnome-font-viewer
 gnome-keybindings
 gnome-keyring
 gnome-logs
-gnome-maps
 gnome-menus
 gnome-mimeapps
-gnome-mines
-gnome-music
-gnome-notes
 gnome-online-accounts
 gnome-power-manager
 gnome-remote-desktop
@@ -287,14 +275,11 @@ gnome-session
 gnome-settings-daemon
 gnome-shell
 gnome-shell-extensions
-gnome-software
 gnome-system-monitor
 gnome-text-editor
-gnome-tour
 gnome-tweaks
 gnome-user-docs
 gnome-user-share
-gnome-weather
 gnu-free-fonts
 gnu-netcat
 gnulib-l10n
@@ -333,7 +318,6 @@ gst-devtools-libs
 gst-editing-services
 gst-libav
 gst-plugin-gtk
-gst-plugin-gtk4
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-bad-libs
@@ -438,6 +422,7 @@ kubectl
 l-smash
 lame
 lapack
+lapce
 lazygit
 lcms2
 ldb
@@ -488,7 +473,6 @@ libcolord
 libcue
 libcups
 libdaemon
-libdatachannel
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
@@ -531,8 +515,6 @@ libgirepository
 libgit2
 libglvnd
 libgme
-libgnome-games-support
-libgnome-games-support-2
 libgoa
 libgpg-error
 libgphoto2
@@ -562,7 +544,6 @@ libiptcdata
 libisl
 libixion
 libjpeg-turbo
-libjuice
 libjxl
 libksba
 liblangtag
@@ -659,7 +640,6 @@ libsass
 libseccomp
 libsecret
 libshout
-libshumate
 libsidplayfp
 libsigc++
 libsigc++-3.0
@@ -806,7 +786,6 @@ man-db
 mariadb-libs
 markdown2pdf
 maven
-mbedtls
 mc
 md4c
 mdadm
@@ -851,6 +830,7 @@ nettle
 network-manager-applet
 networkmanager
 networkmanager-openvpn
+networkmanager-vpn-plugin-openvpn
 ninja
 niri
 nm-connection-editor
@@ -868,7 +848,6 @@ numactl
 nushell
 nvm
 nwg-look
-obs-studio
 ocl-icd
 odin
 onefetch
@@ -910,6 +889,7 @@ papers
 parted
 paru
 paru-debug
+pass
 pastel
 pastel-docs
 patch
@@ -973,7 +953,6 @@ powertop
 pps-tools
 procps-ng
 protobuf
-protobuf-c
 psmisc
 pugixml
 pyenv
@@ -1064,7 +1043,6 @@ readline
 redland
 reflector
 ripgrep
-rnnoise
 rofi
 rofi-emoji
 rpcbind
@@ -1089,6 +1067,7 @@ sdl2_ttf
 sdl3
 seatd
 sed
+senpai
 serd
 shaderc
 shadow
@@ -1146,6 +1125,7 @@ thefuck
 thin-provisioning-tools
 thunar
 timidity++
+tiny
 tinysparql
 tinyxml2
 tk
@@ -1196,7 +1176,6 @@ upower
 usbmuxd
 usbutils
 usbview
-uthash
 util-linux
 util-linux-libs
 uwufetch
