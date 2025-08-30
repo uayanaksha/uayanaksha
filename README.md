@@ -14,7 +14,7 @@
 
 [**Voteseva**](https://github.com/uayanaksha/voteseva): Online voting system
 
-[**book-recomender**](https://github.com/uayanaksha/book-recomender): Huggingface wrapped book recommendation model
+[**book-recommender**](https://github.com/uayanaksha/book-recommender): Huggingface wrapped book recommendation model
 
 ## Connect
 [Email](mailto:uayanaksha@gmail.com) | [LinkedIn](https://linkedin.com/in/uayanaksha) | [X Profile](https://x.com/uayanaksha/) | [Website](https://ayanaksha.vercel.app/)
