@@ -1,59 +1,88 @@
-[[ $- != *i* ]] && return
+# ~/.bashrc
+#
+# Safer Bash defaults
+set -o noclobber   # prevent overwriting files accidentally
+# set -o nounset     # error on unset variables
+set -o pipefail    # fail pipelines on any error
+set -o vi
 
-# Use bash-completion, if available
-# [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && source /usr/share/bash-completion/bash_completion
+# Bash usability enhancements
+shopt -s autocd          # just type directory name to cd
+shopt -s cdspell         # auto-fix minor typos in 'cd'
+shopt -s checkwinsize    # fix terminal size on resize
+shopt -s cmdhist         # multi-line commands = 1 history entry
+shopt -s dirspell        # auto-correct directory names when completing
+shopt -s extglob         # enable extended glob patterns
+shopt -s globstar        # enable ** recursive globbing
+shopt -s histappend      # append to history file instead of overwriting
+
+# Prompt customization
+if tput setaf 1 &>/dev/null; then
+  # Colored PS1 prompt
+  PS1='\[\e[38;5;254;1m\][$?] \W $\[\e[0m\] '
+  PS2="> "
+else
+  PS1='[$?] \w $ '
+  PS2="> "
+fi
+
+# Aliases for productivity
+alias l='eza -1'
+alias la='eza -lah'
+alias ll='eza -lh'
+alias ls='eza -l'
+alias cdroid="cd /run/user/1000/gvfs/mtp:host=realme_SM8350-IDP__SN%3AFAC71CD6_fac71cd6"
+alias cls='clear'
+alias df='df -h'
+alias du='du -h'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias journal='vim "journal_$(date +%Y%m%d-%H%M%S).txt"'
+alias path='echo -e ${PATH//:/\\n}'
+alias pbal="powerprofilesctl set balanced"
+alias perf="powerprofilesctl set performance"
+alias play="cat ~/.misc/op-ed.txt | fzf-tmux | cut -d'|' -f 2 | \ 
+  xargs mpv --profile=fast \ 
+  --ytdl-format='bestvideo[height<=1440]+bestaudio/best'"
+alias pl="mpv --ytdl-format='bestvideo[height<=1080]+bestaudio/best' "
+alias psave="powerprofilesctl set power-saver"
+alias v="vim -p "
+alias :q="exit "
+alias :x="exit "
+
+_mz(){
+    local path="$(fzf)"
+    local type=$(file --mime-type -b "$path" )
+    [[ "$type" =~ ^(video|audio)/ ]] && mpv "$path"
+}
+
+alias mz=_mz
+
+# Git shortcuts
+alias ga='git add .'
+alias gb='git branch -a'
+alias gc='git commit -S -m'
+alias gco='git checkout'
+alias gp='git push'
+alias gs='git status'
+
+# Safer defaults
+alias rm='rm -i'
+alias mv='mv -i'
+alias cp='cp -i'
+
+# Enable colorized man pages
+man() {
+    LESS_TERMCAP_mb=$'\e[1;31m' \
+    LESS_TERMCAP_md=$'\e[1;36m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[1;32m' \
+    command man "$@"
+}
 
 eval "$(thefuck --alias fk)"
 eval "$(zoxide init bash)"
-
-# Activate aliases
-[[ $PS1 && -f ~/.misc/.aliases ]] && . ~/.misc/.aliases
-
-# import env vars
-[[ -f ~/.bash_env ]] && . ~/.bash_env
-
-# Setup: android-studio
-# export ANDROID_HOME=$HOME/Android/Sdk
-# [ -d $ANDROID_HOME/emulator ] && export PATH=$PATH:$ANDROID_HOME/emulator;
-# [ -d $ANDROID_HOME/platform-tools ] && export PATH=$PATH:$ANDROID_HOME/platform-tools;
-
-# Setup: bun
-export BUN_INSTALL=$HOME/.bun
-[ -d $BUN_INSTALL/bin ] && export PATH=$PATH:$BUN_INSTALL/bin;
-
-# Setup: cargo
-export CARGO_HOME=$HOME/.cargo;
-[ -d $CARGO_HOME/bin ] && export PATH=$PATH:$CARGO_HOME/bin;
-
-# Setup: deno 
-export DENO_INSTALL_ROOT=$HOME/.deno/bin;
-export DENO_DIR=$HOME/.deno/cache;
-[ -d $HOME/.deno/bin ] && export PATH=$PATH:$HOME/.deno/bin;
-. "/home/ayanaksha/.deno/env"
-
-# local exec
-[ -d $HOME/.local/bin ] && export PATH=$PATH:$HOME/.local/bin;
-
-# Setup: golang
-export GOPATH=$HOME/go;
-export GOBIN=$GOPATH/bin;
-[ -d $GOBIN ] && export PATH=$PATH:$GOBIN;
-
-# Setup: java-17
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
-[ -d $JAVA_HOME/bin ] && export PATH=$PATH:$JAVA_HOME/bin;
-
-# Setup: nvm
-export NVM_DIR="$HOME/.config/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
-[[ -e /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
-
-# Setup: pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[ -d $PYENV_ROOT/shims ] && export PATH=$PATH:$PYENV_ROOT/shims;
-if command -v pyenv 1>/dev/null 2>&1; then
-    eval "$( pyenv init --path )"
-fi
-
-[[ -x /usr/bin/fastfetch ]] && /usr/bin/fastfetch
