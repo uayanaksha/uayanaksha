@@ -1,10 +1,82 @@
-#
 # ~/.bash_env
-# 
 
-# secrets
-***REMOVED***
-***REMOVED***
-export CF_CALLS_APP_ID="83e9173e62a269903fe24694b1c6a8e7";
-***REMOVED***
-***REMOVED***
+# Locale settings
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# Default editor & pager
+export EDITOR="vim"
+export VISUAL="vim"
+export PAGER="less"
+export MANPAGER='nvim +Man!'
+export GPG_TTY=$(tty)
+
+# XDG session vars
+export XDG_SESSION_DESKTOP=sway
+export XDG_CURRENT_DESKTOP=sway
+export XDG_CONFIG_HOME="$HOME/.config"
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+# Better history control
+export HISTSIZE=50000
+export HISTFILESIZE=100000
+export HISTCONTROL=ignoredups:erasedups
+export HISTTIMEFORMAT="%F %T "
+export HISTFILE=~/.bash_history
+
+# Path management
+export PATH="$HOME/.local/bin:$PATH"
+
+# Always prefer modern tools if available
+if command -v bat &>/dev/null; then
+    alias cat='bat --paging=never'
+fi
+
+# Set less to handle colors properly
+export LESS='-R'
+
+# Use bash-completion, if available
+# [[ $PS1 && -f /usr/share/bash-completion/bash_completion ]] && source /usr/share/bash-completion/bash_completion
+
+# Setup: android-studio
+# export ANDROID_HOME=$HOME/Android/Sdk
+# [ -d $ANDROID_HOME/emulator ] && export PATH=$PATH:$ANDROID_HOME/emulator;
+# [ -d $ANDROID_HOME/platform-tools ] && export PATH=$PATH:$ANDROID_HOME/platform-tools;
+
+# Setup: bun
+export BUN_INSTALL=$HOME/.bun
+[ -d $BUN_INSTALL/bin ] && export PATH=$PATH:$BUN_INSTALL/bin;
+
+# Setup: cargo
+export CARGO_HOME=$HOME/.cargo;
+[ -d $CARGO_HOME/bin ] && export PATH=$PATH:$CARGO_HOME/bin;
+
+# Setup: deno 
+export DENO_INSTALL_ROOT=$HOME/.deno/bin;
+export DENO_DIR=$HOME/.deno/cache;
+[ -d $HOME/.deno/bin ] && export PATH=$PATH:$HOME/.deno/bin;
+. "/home/ayanaksha/.deno/env"
+
+# Setup: golang
+export GOPATH=$HOME/go;
+export GOBIN=$GOPATH/bin;
+[ -d $GOBIN ] && export PATH=$PATH:$GOBIN;
+
+# Setup: java-17
+export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+[ -d $JAVA_HOME/bin ] && export PATH=$PATH:$JAVA_HOME/bin;
+
+# Setup: nvm
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+[[ -e /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
+
+# Setup: pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[ -d $PYENV_ROOT/shims ] && export PATH=$PATH:$PYENV_ROOT/shims;
+if command -v pyenv 1>/dev/null 2>&1; then
+    eval "$( pyenv init --path )"
+fi
+
+export _BASH_ENV_LOADED=1
