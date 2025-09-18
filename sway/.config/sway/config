@@ -41,10 +41,5 @@ client.unfocused        $uf_br  $uf_bg  $uf_txt     $uf_i       $uf_cbr
 gaps inner 2
 gaps outer 2
 
-# Bar startup
-bar {
-    swaybar_command waybar
-}
-
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
