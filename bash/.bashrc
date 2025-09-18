@@ -42,9 +42,7 @@ alias journal='vim "journal_$(date +%Y%m%d-%H%M%S).txt"'
 alias path='echo -e ${PATH//:/\\n}'
 alias pbal="powerprofilesctl set balanced"
 alias perf="powerprofilesctl set performance"
-alias play="cat ~/.misc/op-ed.txt | fzf-tmux | cut -d'|' -f 2 | \ 
-  xargs mpv --profile=fast \ 
-  --ytdl-format='bestvideo[height<=1440]+bestaudio/best'"
+alias play="cat ~/.misc/op-ed.txt | fzf-tmux | cut -d'|' -f 2 | xargs mpv --profile=fast --ytdl-format='bestvideo[height<=1440]+bestaudio/best'"
 alias pl="mpv --ytdl-format='bestvideo[height<=1080]+bestaudio/best' "
 alias psave="powerprofilesctl set power-saver"
 alias v="vim -p "
