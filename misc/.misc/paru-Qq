@@ -59,6 +59,7 @@ audit
 autoconf
 automake
 avahi
+aws-cli
 ayatana-ido
 babl
 bandwhich
@@ -103,6 +104,7 @@ cairo
 cairomm
 cairomm-1.16
 calc
+catppuccin-cursors-macchiato
 cava
 cblas
 cdparanoia
@@ -130,7 +132,6 @@ db5.3
 dbus
 dbus-broker
 dbus-broker-units
-dbus-glib
 dbus-units
 dconf
 dconf-editor
@@ -420,6 +421,7 @@ kmod
 krb5
 kubectl
 l-smash
+ladspa
 lame
 lapack
 lapce
@@ -961,6 +963,7 @@ python
 python-argcomplete
 python-attrs
 python-autocommand
+python-botocore
 python-cairo
 python-certifi
 python-cffi
@@ -976,6 +979,7 @@ python-decorator
 python-defusedxml
 python-distro
 python-docopt
+python-docutils
 python-filelock
 python-fonttools
 python-gobject
@@ -985,6 +989,7 @@ python-jaraco.collections
 python-jaraco.context
 python-jaraco.functools
 python-jaraco.text
+python-jmespath
 python-kiwisolver
 python-markdown-it-py
 python-matplotlib
@@ -998,6 +1003,7 @@ python-pip
 python-pipx
 python-platformdirs
 python-psutil
+python-pyasn1
 python-pycparser
 python-pygments
 python-pyparsing
@@ -1007,6 +1013,8 @@ python-pyxdg
 python-requests
 python-requests-toolbelt
 python-rich
+python-rsa
+python-s3transfer
 python-setproctitle
 python-setuptools
 python-shtab
@@ -1017,6 +1025,7 @@ python-urllib3
 python-userpath
 python-wcwidth
 python-wheel
+python-yaml
 python-zipp
 qhull
 qpdf
@@ -1271,7 +1280,6 @@ yt-dlp
 ytfzf
 yyjson
 zbar
-zen-browser-bin
 zeromq
 zimg
 zip
