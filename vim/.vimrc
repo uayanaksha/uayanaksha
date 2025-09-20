@@ -19,8 +19,8 @@ let g:netrw_liststyle=3
 
 " Plugins
 call plug#begin('~/.vim/plugged')
+  Plug 'catppuccin/vim', { 'as': 'catppuccin' }
   Plug 'dylanaraps/fff.vim'
-  Plug 'flazz/vim-colorschemes'
   Plug 'junegunn/fzf'
   Plug 'neoclide/coc.nvim'
   Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -28,6 +28,7 @@ call plug#begin('~/.vim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'mattn/emmet-vim'
   " Plug 'arzg/vim-colors-xcode' 
+  " Plug 'flazz/vim-colorschemes'
   " Plug 'lervag/vimtex'
 call plug#end()
 
@@ -72,7 +73,7 @@ noremap <Right> <Nop>
 set background=dark
 set termguicolors
 if exists("syntax_on")
-    colo gruvbox
+  colo custom_theme
 endif
 hi Folded guibg=#888888 guifg=#080808
 
