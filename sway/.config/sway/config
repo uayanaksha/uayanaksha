@@ -1,3 +1,5 @@
+include catppuccin-mocha
+
 # Variables
 set $mod    Mod4
 set $left   h
@@ -14,32 +16,13 @@ font pango:"SF Pro Text" Semibold 12
 # Window border
 default_border pixel 2
 
-# Set colors
-set $fg_br      #355070
-set $fg_bg      #25282d
-set $fg_txt     #8ba2ba
-set $fg_i       #4f5256
-set $fg_cbr     #4f5256
-
-set $fi_br      #0d1b2a
-set $fi_bg      #1b263b
-set $fi_txt     #7a95b1
-set $fi_i       #393c41
-set $fi_cbr     #393c41
-
-set $uf_br      #000000
-set $uf_bg      #000000
-set $uf_txt     #6a89a7
-set $uf_i       #25282d
-set $uf_cbr     #25282d
-
-# class                 border  backgr. text        indicator   child_border
-client.focused          $fg_br  $fg_bg  $fg_txt     $fg_i       $fg_cbr
-client.focused_inactive $fi_br  $fi_bg  $fi_txt     $fi_i       $fi_cbr
-client.unfocused        $uf_br  $uf_bg  $uf_txt     $uf_i       $uf_cbr
-
-gaps inner 2
-gaps outer 2
+# target                 title     bg    text   indicator  border
+client.focused           $lavender $base $text  $rosewater $lavender
+client.focused_inactive  $overlay0 $base $text  $rosewater $overlay0
+client.unfocused         $overlay0 $base $text  $rosewater $overlay0
+client.urgent            $peach    $base $peach $overlay0  $peach
+client.placeholder       $overlay0 $base $text  $overlay0  $overlay0
+client.background        $base
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
