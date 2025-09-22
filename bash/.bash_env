@@ -45,26 +45,26 @@ export LESS='-R'
 
 # Setup: bun
 export BUN_INSTALL=$HOME/.bun
-[ -d $BUN_INSTALL/bin ] && export PATH=$PATH:$BUN_INSTALL/bin;
+export PATH=$PATH:$BUN_INSTALL/bin;
 
 # Setup: cargo
 export CARGO_HOME=$HOME/.cargo;
-[ -d $CARGO_HOME/bin ] && export PATH=$PATH:$CARGO_HOME/bin;
+export PATH=$PATH:$CARGO_HOME/bin;
 
 # Setup: deno 
 export DENO_INSTALL_ROOT=$HOME/.deno/bin;
 export DENO_DIR=$HOME/.deno/cache;
-[ -d $HOME/.deno/bin ] && export PATH=$PATH:$HOME/.deno/bin;
+export PATH=$PATH:$HOME/.deno/bin;
 . "/home/ayanaksha/.deno/env"
 
 # Setup: golang
 export GOPATH=$HOME/go;
 export GOBIN=$GOPATH/bin;
-[ -d $GOBIN ] && export PATH=$PATH:$GOBIN;
+export PATH=$PATH:$GOBIN;
 
 # Setup: java-17
 export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
-[ -d $JAVA_HOME/bin ] && export PATH=$PATH:$JAVA_HOME/bin;
+export PATH=$PATH:$JAVA_HOME/bin;
 
 # Setup: nvm
 export NVM_DIR="$HOME/.config/nvm"
