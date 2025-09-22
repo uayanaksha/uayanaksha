@@ -33,6 +33,7 @@ alias ll='eza -lh'
 alias ls='eza -l'
 alias cdroid="cd /run/user/1000/gvfs/mtp:host=realme_SM8350-IDP__SN%3AFAC71CD6_fac71cd6"
 alias cls='clear'
+alias clr='clear'
 alias df='df -h'
 alias du='du -h'
 alias grep='grep --color=auto'
@@ -41,13 +42,16 @@ alias fgrep='fgrep --color=auto'
 alias journal='vim "journal_$(date +%Y%m%d-%H%M%S).txt"'
 alias path='echo -e ${PATH//:/\\n}'
 alias pbal="powerprofilesctl set balanced"
-alias perf="powerprofilesctl set performance"
+alias pperf="powerprofilesctl set performance"
+alias psave="powerprofilesctl set power-saver"
 alias play="cat ~/.misc/op-ed.txt | fzf-tmux | cut -d'|' -f 2 | xargs mpv --profile=fast --ytdl-format='bestvideo[height<=1440]+bestaudio/best'"
 alias pl="mpv --ytdl-format='bestvideo[height<=1080]+bestaudio/best' "
-alias psave="powerprofilesctl set power-saver"
-alias v="vim -p "
-alias :q="exit "
-alias :x="exit "
+alias v="vim -p"
+alias vi="vim -p"
+alias vim="vim -p"
+alias nvim="vim -p"
+alias :q="exit"
+alias :x="exit"
 
 _mz(){
     local path="$(fzf)"
@@ -66,7 +70,7 @@ alias gp='git push'
 alias gs='git status'
 
 # Safer defaults
-alias rm='rm -i'
+alias rm='trash'
 alias mv='mv -i'
 alias cp='cp -i'
 
