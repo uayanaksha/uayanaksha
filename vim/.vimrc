@@ -93,6 +93,11 @@ map <leader><left>  :tabprevious<CR>
 map <leader>l       :tabnext<CR>
 map <leader>h       :tabprevious<CR>
 
+"move tabs
+map <leader>bp  :bprevious<CR>
+map <leader>bn  :bnext<CR>
+map bp          :bprevious<CR>
+map bn          :bnext<CR>
 
 "adjust split sizes easier
 noremap <silent> <C-Left>   :vertical resize +3<CR>
