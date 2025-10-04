@@ -62,9 +62,9 @@ _mz(){
 alias mz=_mz
 
 # Git shortcuts
-alias ga='git add .'
+alias ga='git add'
 alias gb='git branch -a'
-alias gc='git commit -S -m'
+alias gc='git commit -S'
 alias gco='git checkout'
 alias gp='git push'
 alias gs='git status'
@@ -87,4 +87,5 @@ man() {
 }
 
 eval "$(thefuck --alias fk)"
+eval "$(pyenv init - bash)"
 eval "$(zoxide init bash)"
