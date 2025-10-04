@@ -8,10 +8,11 @@
 	showUntrackedFiles = no
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
+  stat = status --short --untracked-files --branch
 [merge]
-	tool = meld
+	tool = /usr/bin/meld
 [diff]
-	tool = meld
+	tool = /usr/bin/meld
 [gpg]
 	format = ssh
 [gpg "ssh"]
