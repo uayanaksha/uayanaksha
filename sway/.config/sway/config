@@ -27,7 +27,6 @@ client.background        $base
 output eDP-1 color_profile icc /usr/share/color/icc/colord/WideGamutRGB.icc
 
 seat seat0 hide_cursor when-typing enable
-seat seat0 hide_cursor 5000
 
 include /etc/sway/config.d/*
 include ~/.config/sway/config.d/*
