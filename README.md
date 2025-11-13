@@ -55,6 +55,11 @@ Forward increments will be added soon.
 
   - Easy effects profiles (auto-script): `bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/PulseEffects-Presets/master/install.sh)"`
 
+## Audio codec configuration
+  - Download Dolby Atmos WAV file [recommended](https://airtable.com/appayGNkn3nSuXkaz/shruimhjdSakUPg2m/tbloLjoZKWJDnLtTc)
+  - Pipewire filter-chain virt surround 7.1 hesuvi conf [gilab link](https://gitlab.freedesktop.org/pipewire/pipewire/-/raw/master/src/daemon/filter-chain/sink-virtual-surround-7.1-hesuvi.conf)
+  - Setup guide [yt-link](https://www.youtube.com/watch?v=tymRFhUiXVQ&t=229s)
+
 ## Enable ssh-agent 
 
   - Enable `systemctl enable --user ssh-agent.socket` to avoid `eval $(ssh-agent -s)` BS.
