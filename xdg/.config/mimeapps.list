@@ -1,21 +1,33 @@
 [Default Applications]
+application/pdf=org.gnome.Evince.desktop
+audio/flac=mpv.desktop
+audio/m4a=mpv.desktop
+audio/mp3=mpv.desktop
+audio/webm=mpv.desktop;
+image/gif=mpv.desktop
+image/jpeg=imv-dir.desktop
+image/jpg=imv-dir.desktop
+image/png=imv-dir.desktop
+image/webp=imv-dir.desktop
+inode/directory=thunar.desktop
 text/html=firefox.desktop
+text/markdown=dev.lapce.lapce.desktop
+text/plain=dev.lapce.lapce.desktop
+video/mkv=mpv.desktop;
+video/mov=mpv.desktop;
+video/mp4=mpv.desktop;
+video/webm=mpv.desktop;
+x-scheme-handler/about=firefox.desktop
 x-scheme-handler/http=firefox.desktop
 x-scheme-handler/https=firefox.desktop
-x-scheme-handler/about=firefox.desktop
 x-scheme-handler/unknown=firefox.desktop
-application/pdf=org.gnome.Evince.desktop
-image/png=imv-dir.desktop
-audio/flac=mpv.desktop
-image/gif=mpv.desktop
-inode/directory=thunar.desktop
-image/jpeg=imv-dir.desktop
 
 [Added Associations]
 application/pdf=org.gnome.Evince.desktop;
-image/png=imv-dir.desktop;imv.desktop;
+application/zip=org.gnome.FileRoller.desktop;
 audio/flac=mpv.desktop;
 image/gif=mpv.desktop;
-application/zip=org.gnome.FileRoller.desktop;
-inode/directory=thunar.desktop;
 image/jpeg=imv.desktop;imv-dir.desktop;
+image/png=imv-dir.desktop;imv.desktop;
+inode/directory=thunar.desktop;
+video/webm=mpv.desktop;
