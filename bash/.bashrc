@@ -27,6 +27,7 @@ else
 fi
 
 # Aliases for productivity
+alias ff='fastfetch'
 alias l='eza -1'
 alias la='eza -lah'
 alias ll='eza -lh'
