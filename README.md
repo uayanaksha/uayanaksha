@@ -70,3 +70,4 @@ Forward increments will be added soon.
     `git update-index --skip-worktree <your-file>`
   - To revert this and start tracking changes again, use:
     `git update-index --no-skip-worktree <your-file>`
+  - Github repo api access `https://api.github.com/repos/<user-name>/<repo-name>`
