@@ -1,6 +1,26 @@
-# Arch Linux System configuration
+## Hi! I'm Ayanaksha ✠
+I explore tech, write code and enjoy life.
 
-## Setup config symlinks
+## Curr:
+**Daily Activity → [Codeforces](https://github.com/uayanaksha/codeforces) || [Leetcode](https://github.com/uayanaksha/leetcode)**
+
+**Ping Me → [Email](mailto:uayanaksha@gmail.com) || [Linkdin](https://linkedin.com/in/uayanaksha) || [X Profile](https://x.com/uayanaksha/)**
+
+## Prev:
+![Error on loading package list](https://skillicons.dev/icons?i=ts,vite,react,tailwind,bun,express,nextjs)
+![Error on loading package list](https://skillicons.dev/icons?i=c,cpp,rust,actix,sqlite,postgres,mongo)
+![Error on loading package list](https://skillicons.dev/icons?i=git,docker,bash,neovim,linux,arch,ubuntu)
+
+| Name | Description | Link |
+| --- | --- | --- |
+| **Voteseva** | Online voting system | [**@uayanaksha/voteseva**](https://github.com/uayanaksha/voteseva) |
+| **Book Recommendation System** | LangChain OpenAIEmbedding recommendation model | [**@uayanaksha/book-recommender**](https://github.com/uayanaksha/book-recommender) |
+
+![Unexpected Error on Loading Contrib-Graph](https://github-readme-activity-graph.vercel.app/graph?username=uayanaksha&theme=high-contrast&area=true)
+
+## Arch Linux System configuration
+
+### Setup config symlinks
 
 ```bash
 git clone gl:uayanaksha/sys ~/sys
@@ -8,33 +28,33 @@ cd ~/sys
 stow -R */
 ```
 
-## Update & Iterations
+### Update & Iterations
 
 Forward increments will be added soon.
  - Main SwayWM 
  - Alt Niri/WM conf is being cooked.
 
-## Packages install: core/extra
+### Packages install: core/extra
 
   - install core/extra packages: `cat ~/.misc/paru-Qqm | xargs paru -S --noconfirm`
   - install AUR packages: `cat ~/.misc/paru-Qq  | xargs paru -S --noconfirm`
 
-## Python setup
+### Python setup
 
   - setup global version: `pyenv global 3.13.4`
   - setup local version: `pyenv local 3.13.4`
   - upgrade pip packages: `pip freeze | cut -d= -f1 | xargs pip install --upgrade`
 
-## Systemd daemon setup 
+### Systemd daemon setup 
 
   - Startup custom systemd services inside `~/.config/systemd/user/` directory. Enable all these files using `systemctl --user daemon-reload && systemctl --user enable <my_service.service>`
 
-## Using Tar
+### Using Tar
 
   - create tar zip file - `tar -cvzf my_project.tar.gz my_project`
   - unzip tar - `tar -xzvf <zip name>.tar.gz`
 
-## Setup GTK/gnome theme settings
+### Setup GTK/gnome theme settings
 
   - set theme (manual):
     ```
@@ -51,20 +71,20 @@ Forward increments will be added soon.
   - Setup wm theme (auto-script): `gh repo clone vinceliuice/WhiteSur-gtk-theme` 
   - Setup icon theme (auto-script): `gh repo clone vinceliuice/WhiteSur-icon-theme` 
 
-## Download Easy Effect Presents
+### Download Easy Effect Presents
 
   - Easy effects profiles (auto-script): `bash -c "$(curl -fsSL https://raw.githubusercontent.com/JackHack96/PulseEffects-Presets/master/install.sh)"`
 
-## Audio codec configuration
+### Audio codec configuration
   - Download Dolby Atmos WAV file [recommended](https://airtable.com/appayGNkn3nSuXkaz/shruimhjdSakUPg2m/tbloLjoZKWJDnLtTc)
   - Pipewire filter-chain virt surround 7.1 hesuvi conf [gilab link](https://gitlab.freedesktop.org/pipewire/pipewire/-/raw/master/src/daemon/filter-chain/sink-virtual-surround-7.1-hesuvi.conf)
   - Setup guide [yt-link](https://www.youtube.com/watch?v=tymRFhUiXVQ&t=229s)
 
-## Enable ssh-agent 
+### Enable ssh-agent 
 
   - Enable `systemctl enable --user ssh-agent.socket` to avoid `eval $(ssh-agent -s)` BS.
 
-## Git quarks
+### Git quarks
 
   - It's designed for situations where you need to make local changes to a tracked file that you never intend to commit.
     `git update-index --skip-worktree <your-file>`
