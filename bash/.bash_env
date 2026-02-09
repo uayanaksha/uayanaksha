@@ -79,4 +79,8 @@ if command -v pyenv 1>/dev/null 2>&1; then
     eval "$( pyenv init --path )"
 fi
 
+# Setup: solana
+export SOLANA_CONFIG_DIR="$HOME/.config/solana/cli/config.yml"
+export PATH="$HOME/.local/share/solana/install/active_release/bin:$PATH"
+
 export _BASH_ENV_LOADED=1
