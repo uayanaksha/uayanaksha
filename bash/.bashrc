@@ -19,12 +19,11 @@ shopt -s histappend      # append to history file instead of overwriting
 # Prompt customization
 if tput setaf 1 &>/dev/null; then
   # Colored PS1 prompt
-  PS1='\[\e[38;5;254;1m\][$?] \W $\[\e[0m\] '
-  PS2="> "
+  PS1='\[\e[38;5;254;1m\][$?/\A] \W $\[\e[0m\] '
 else
-  PS1='[$?] \w $ '
-  PS2="> "
+  PS1='[$?/\A] \w $ '
 fi
+PS2='\> '
 
 # Aliases for productivity
 alias ff='fastfetch'
@@ -87,6 +86,5 @@ man() {
     command man "$@"
 }
 
-eval "$(thefuck --alias fk)"
 eval "$(pyenv init - bash)"
 eval "$(zoxide init bash)"
