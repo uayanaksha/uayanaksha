@@ -1,0 +1,37 @@
+.
+├── Alya - MONTAGEM SUPERSONIC (TikTok slowed version) [tD6W_G2fJmk].mp4
+├── arknights:endfield
+│   └── Laevatain - AWAKENED [s-G4liF2TmQ].mp4
+├── genshin
+│   ├── Lauma - LUA NA PRAÇA [ufTiC-wozxc].mkv
+│   └── Lauma - SEMPERO [ufTiC-wozxc].mp4
+├── hsr
+│   ├── Cypher - DOCE BRISA [eR-u3XauxDU].mp4
+│   ├── Yao Guang - MONTAGEM ALQUIMIA [MRN4VU3i5Sw].mp4
+│   └── Yao Guang - MONTAGEM BAILOW 2 [mGF8Uv2aKrE].mp4
+├── Saber Alter VS Rider - Sound Re-Design [kJpq9lsldUk].mkv
+├── wuwa
+│   ├── Aemeath - RITMO DO MAR (Super Slowed) [KdIw34CBw2Y].mp4
+│   ├── Augusta - REI REI (Super Slowed) [iQnR334jtyk].webm
+│   ├── Carlotta - DOCE BRISA [hG_HZs9_RQs].mp4
+│   ├── Cartethiya - BAILA MEJOR (Super Slowed) [sL2ZI_sMKyE].mp4
+│   ├── Cartethiya - META FUNK (Slowed) [N46jclDey1Q].mp4
+│   ├── Changli - HEAVENLY JUMPSTYLE [mdzTHfFj25c].mp4
+│   ├── Chen Qianyu - LUZ ROJA (Slowed) [eotjsLtuPW4].mp4
+│   ├── Galbrena - SENTE MAIS (Super Slowed) [OAHV4gRqQs4].mp4
+│   ├── Iuno - MONTAGEM FAMA (Super Slowed) [fa0bPopptqw].mp4
+│   ├── Iuno - NADA NADA (Perfect Slowed + Reverb) [-Os2PTJJCoI].mp4
+│   ├── Lupa - MONTAGEM MALDICAO (Super Slowed) [5wQOEb0bOsk].mp4
+│   ├── Lupa - VEM VEM (Slowed + Reverb) [iimvBKyvhzc].mp4
+│   ├── Lynae - FEEL LOVE JUMPSTYLE (Super Slowed) [sGxBoUwNChY].mp4
+│   ├── Phrolova - SOMBRA (Slowed) [Kj8IGnZbE48].mp4
+│   ├── Qiuyuan - MANDRAGORA [NZsh8aO7ACk].mp4
+│   ├── Zani - GOZALI (Super Slowed) [Jisod0yHh0E].mp4
+│   ├── Zani - MENTE MA (Bass Boosted + Reverb) [8Op8uEuGTe8].webm
+│   └── Zani - MONTAGEM ROMÂNTICA (Super Slowed) [4BL4C1grmis].mp4
+└── zzz
+    ├── Anby - FUZILADA [6tJ0YcwB_VE].mkv
+    ├── Ye Shunguang - DARK AURA FUNK (SUPER SLOWED) [vl5pt-ihJc4].mp4
+    └── Yixuan - VEI VAI TREMER (SUPER SLOWED) [jeRAE1oAFkw].webm
+
+6 directories, 29 files
