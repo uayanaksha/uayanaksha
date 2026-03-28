@@ -74,6 +74,14 @@ alias rm='trash'
 alias mv='mv -i'
 alias cp='cp -i'
 
+activate(){
+  if [[ -e ./.venv/bin/activate ]]; then 
+    source .venv/bin/activate;
+  else 
+    echo ".venv not found";
+  fi
+}
+
 # Enable colorized man pages
 man() {
     LESS_TERMCAP_mb=$'\e[1;31m' \
