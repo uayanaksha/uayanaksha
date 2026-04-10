@@ -72,3 +72,27 @@ Forward increments will be added soon.
     `git update-index --no-skip-worktree <your-file>`
   - Github repo api access `https://api.github.com/repos/<user-name>/<repo-name>`
 
+## Mouse restart (when irresponsive)
+
+  - Method 1
+    ```
+    sudo rmmod i2c_hid_acpi && sudo modprobe i2c_hid_acpi
+    ```
+  - Method 2
+    ```
+    sudo rmmod i2c_hid && sudo modprobe i2c_hid
+    ```
+  - Method 3
+    ```
+    sudo rmmod psmouse && sudo modprobe psmouse
+    ```
+  - Script solution (restart issue)
+    ```
+    #!/bin/sh
+    if [ "$1" = "post" ]; then
+        modprobe -r i2c_hid_acpi && modprobe i2c_hid_acpi
+    fi
+
+    ```
+
+
