@@ -33,8 +33,10 @@ aria2
 aribb24
 asciidoc
 atac
+atop
 audiofile
 autotiling
+awww
 babl
 bandwhich
 baobab
@@ -49,6 +51,7 @@ bind
 blendr
 blueman
 bluez
+bluez-deprecated-tools
 bluez-hid2hci
 bluez-mesh
 bluez-tools
@@ -61,6 +64,7 @@ bun
 calc
 catppuccin-cursors-macchiato
 cava
+cgit
 cmatrix
 cpupower
 cronie
@@ -78,6 +82,8 @@ ed
 efibootmgr
 entr
 epiphany
+espeak-ng
+espeakup
 evince
 exfatprogs
 eza
@@ -131,7 +137,6 @@ gvfs
 gvfs-afc
 gvfs-dnssd
 gvfs-goa
-gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-nfs
@@ -150,11 +155,13 @@ inetutils
 intel-gpu-tools
 intel-media-driver
 intel-ucode
+intellij-idea-community-edition
 iotop
 iwd
 jdk17-openjdk
 jq
 just
+kitty
 kotlin
 ladspa
 lazygit
@@ -186,7 +193,6 @@ meld
 mesa
 mesa-utils
 meson
-mongosh-bin
 mpc
 mpd
 mpv
@@ -219,6 +225,7 @@ nwg-look
 odin
 onefetch
 openbsd-netcat
+opencode
 opencv
 openssh
 openvpn
@@ -247,12 +254,13 @@ pipewire-jack
 pipewire-media-session
 pipewire-pulse
 plocate
+podman
 power-profiles-daemon
 powertop
 pyenv
-python-matplotlib
 python-pip
 python-pipx
+python-uv
 qpdf
 qt5-wayland
 qt6-wayland
@@ -280,7 +288,6 @@ sway
 swaybg
 swayidle
 swaylock
-swww
 tabiew
 tecla
 terminus-font
