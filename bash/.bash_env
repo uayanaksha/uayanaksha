@@ -63,7 +63,7 @@ export GOBIN=$GOPATH/bin;
 export PATH=$PATH:$GOBIN;
 
 # Setup: java-17
-export JAVA_HOME="/usr/lib/jvm/java-17-openjdk"
+export JAVA_HOME="/usr/lib/jvm/jdk-25.0.3"
 export PATH=$PATH:$JAVA_HOME/bin;
 
 # Setup: nvm
