@@ -8,7 +8,8 @@
 	showUntrackedFiles = no
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --branches
-  stat = status --short --untracked-files --branch
+  stat = status --short --branch
+  ls = ls-files
 [merge]
 	tool = /usr/bin/meld
 [diff]
