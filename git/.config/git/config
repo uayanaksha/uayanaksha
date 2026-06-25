@@ -48,6 +48,7 @@
 
 [commit]
 	gpgsign = true
+  template = ~/.config/git/template
 
 [tag]
 	gpgsign = true
