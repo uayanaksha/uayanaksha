@@ -58,12 +58,6 @@
 	process = git-lfs filter-process
 	required = true
 
-[url "git@github.com:uayanaksha/"]
-  insteadOf = "gh:"
-
-[url "git@github.com:ayanakshau-fint/"]
-  insteadOf = "fgh:"
-
 [url "git@github.com:"]
   insteadOf = "xh:"
 
