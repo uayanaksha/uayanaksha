@@ -1,0 +1,75 @@
+[user]
+	name = Ayanaksha Upadhyaya
+	email = uayanaksha@gmail.com
+  signingKey = ~/.ssh/sign.pub
+
+[core]
+	editor = vim
+
+[init]
+  defaultBranch = dev
+
+[status]
+  branch = true
+  showStash = true
+	showUntrackedFiles = all
+
+[push]
+  autoSetupRemote = true
+  default = current
+  followTags = true 
+
+[pull]
+  default = current
+  rebase = true
+
+[rebase]
+  missingCommitsCheck = warn
+
+[alias]
+  lg = "log \
+    --color --graph --abbrev-commit --branches\
+    --pretty=format:'%Cred%h%Creset %C(green)%ad%Creset %C(blue)%an%Creset %C(yellow)%d%Creset %n%s%n'"
+  stat = status --short --branch
+  ls = ls-files
+  lst = ls-tree
+
+[merge]
+	tool = /usr/bin/meld
+
+[diff]
+	tool = /usr/bin/meld
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	allowedSignersFile = ~/.ssh/allowed_signers
+
+[commit]
+	gpgsign = true
+
+[tag]
+	gpgsign = true
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+[url "git@github.com:uayanaksha/"]
+  insteadOf = "gh:"
+
+[url "git@github.com:ayanakshau-fint/"]
+  insteadOf = "fgh:"
+
+[url "git@github.com:"]
+  insteadOf = "xh:"
+
+[credential "https://github.com"]
+  helper = !/usr/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+  helper = !/usr/bin/gh auth git-credential
+

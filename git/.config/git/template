@@ -1,0 +1,28 @@
+# <type>: <short summary, 50 chars or less, imperative mood>
+# |----->|----------------------------------------------------|
+
+# Why is this change needed? What problem does it solve?
+# (wrap body text at ~72 chars)
+
+# How does it address the issue? Any notable implementation details?
+
+# Any side effects, breaking changes, or things reviewers should watch for?
+
+# Refs: #issue-number
+# Co-authored-by: Name <email>
+
+# --- COMMIT END ---
+# Type can be:
+#   feat     (new feature)
+#   fix      (bug fix)
+#   refactor (no functional change)
+#   docs     (documentation only)
+#   style    (formatting, no code change)
+#   test     (adding/updating tests)
+#   chore    (build, tooling, dependencies)
+# --------------------
+# Remember to:
+#   - Use imperative mood ("Add" not "Added" or "Adds")
+#   - Capitalize the summary line
+#   - No period at the end of the summary line
+#   - Separate summary from body with a blank line
